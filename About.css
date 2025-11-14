@@ -1,0 +1,118 @@
+.back{
+
+  background-image: url("./white.png"); 
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  min-height: 60vh;             
+  padding: 4rem 2rem;            
+  color: #fff;                  
+  position: relative;            
+
+}
+.three {
+  text-align: center; 
+  position: relative;
+}
+
+.three h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  display: inline-block;  
+  position: relative;     
+  color: #d8949d;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  min-height: 60vh;
+  font-family: "Fira Code", monospace;
+  color: #111;
+}
+
+.three h1:before {
+  content: "";
+  position: absolute;
+  left: 50%;            
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+
+
+.three h1:after {
+  content: "";
+  position: absolute;
+  left: 50%;             
+  transform: translateX(-50%);
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: transparent;
+}
+
+.about-text {
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.8em;
+  color: #444;
+}
+
+.cv-link {
+  text-decoration: none;
+}
+
+.buttons {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons {
+  --border-right: 6px;
+  --text-stroke-color: rgba(0, 0, 0, 0.6);
+  --animation-color: #d8949d;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.actual-text {
+  color: transparent;
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.buttons:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}

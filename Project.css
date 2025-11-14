@@ -1,0 +1,70 @@
+.projects-section {
+
+  color: #313131;
+  padding: 4rem 2rem;
+  font-family: "Fira Code", monospace;
+}
+
+.projects-title {
+  color: #3f3e3e;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+    padding-top: 20px;
+}
+
+
+.project-card {
+  border: 3px solid #d8949d;
+  padding: 1.5rem;
+  width: 280px;
+  background-color: transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #000000;
+}
+
+.project-stack {
+  font-size: 0.8rem;
+  color: #000000;
+  margin-bottom: 0.8rem;
+}
+
+
+.project-title {
+  font-size: 1.2rem;
+  color: #d8949d;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.project-description {
+  font-size: 0.9rem;
+  color: #434343;
+  margin-bottom: 1rem;
+}
+
+.github-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d8949d;
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: transparent#d9b3ff;
+  color: #d8949d;
+  border: 3px solid black;
+}
